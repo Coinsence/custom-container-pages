@@ -168,23 +168,39 @@ $membership = $space->getMembership();
     <div class="panel">
         <?php if (!$is_logged_in): ?>
             <div class="non-logged-in">
-                <h1>Welcome to our community</h1>
+                <h1><?= Yii::t('container_pages', 'Welcome to our community') ?></h1>
                 <img class="main-logo" src="https://beyondborders.network/images/ibb-logo.png" alt="Impact Beyond Borders Logo">
-                <a class="primary" href="/user/auth/login" data-target="#globalModal">Join us</a>
-                <p>As a collaboration and value exchange platform we are using Coinsence.org platform. By clicking the button above, you agree to Coinsence <a href="/legal/page/view?pageKey=terms">Terms of services</a> and have read and acknowledge Coinsence <a href="/legal/page/view?pageKey=privacy">Privacy Policy</a></p>
+                <a class="primary" href="/user/auth/login" data-target="#globalModal"><?= Yii::t('container_pages', 'Join us') ?></a>
+                <p><?= Yii::t(
+                    'container_pages',
+                    'As a collaboration and value exchange platform we are using Coinsence.org platform. By clicking the button above, you agree to Coinsence {0}Terms of services{1} and have read and acknowledge Coinsence {2}Privacy Policy{3}',
+                    [
+                        '<a href="/legal/page/view?pageKey=terms">',
+                        '</a>',
+                        '<a href="/legal/page/view?pageKey=privacy">',
+                        '</a>'
+                    ]) ?></p>
                 <p class="copyright">
-                    <strong>Powered By: </strong><img src="https://beyondborders.network/images/cs-logo.png" alt="Powered By Coinsence Logo">
+                    <strong><?= Yii::t('container_pages', 'Powered By:') ?> </strong><img src="https://beyondborders.network/images/cs-logo.png" alt="Coinsence Logo">
                 </p>
             </div>
         <?php else: ?>
             <div class="logged-in">
                 <div class="hero">
                     <h1>
-                        <span>We are <br> a global network of</span><br>
-                        Innovators & <br> social entrepreneurs.
+                        <?= Yii::t(
+                            'container_pages',
+                            '{0} We are {1} a global network of {2} Innovators & {3} social entrepreneurs.',
+                            [
+                                '<span>',
+                                '<br>',
+                                '</span><br>',
+                                '<br>',
+                            ]
+                        ) ?>
                     </h1>
                     <p>
-                        Initiated by Tunisian diaspora and local change-makers with the vision to Remove borders and build an open and decentral governed collaboration network that stimulates a more inclusive and sustainable economy that is build on participation and sharing.
+                        <?= Yii::t('container_pages', 'Initiated by Tunisian diaspora and local change-makers with the vision to Remove borders and build an open and decentral governed collaboration network that stimulates a more inclusive and sustainable economy that is build on participation and sharing.') ?>
                     </p>
                     <?php if (!$membership || !$membership->status): ?>
                         <a class="primary" href="/space/beyond-borders/space/membership/request-membership-form" data-target="#globalModal">Join in</a>
@@ -192,25 +208,25 @@ $membership = $space->getMembership();
                 </div>
                 <div class="sections">
                     <div class="section">
-                        <h2>Create</h2>
+                        <h2><?= Yii::t('container_pages', 'Create') ?></h2>
                         <p>
-                            Add your project to receive Tunisia Impact COIN that you can use to reward your donors and supporters.
+                            <?= Yii::t('container_pages', 'Add your project to receive Tunisia Impact COIN that you can use to reward your donors and supporters.') ?>
                         </p>
-                        <a class="secondary" href="<?= $add_project_url ?>">Add project</a>
+                        <a class="secondary" href="<?= $add_project_url ?>"><?= Yii::t('container_pages', 'Add project') ?></a>
                     </div>
                     <div class="section">
-                        <h2>Fund</h2>
+                        <h2><?= Yii::t('container_pages', 'Fund') ?></h2>
                         <p>
-                            Check our project and get for your financial support your reward in Tunisia Impact COIN.
+                            <?= Yii::t('container_pages', 'Check our project and get for your financial support your reward in Tunisia Impact COIN.') ?>
                         </p>
-                        <a class="secondary" href="<?= $fund_project_url ?>">Fund project</a>
+                        <a class="secondary" href="<?= $fund_project_url ?>"><?= Yii::t('container_pages', 'Fund project') ?></a>
                     </div>
                     <div class="section">
-                        <h2>Support</h2>
+                        <h2><?= Yii::t('container_pages', 'Support') ?></h2>
                         <p>
-                            Offer your expertise, products, services or discounts and receive Tunisia Impact COIN as compensation.
+                            <?= Yii::t('container_pages', 'Offer your expertise, products, services or discounts and receive Tunisia Impact COIN as compensation.') ?>
                         </p>
-                        <a class="secondary" href="<?= $sell_product_url ?>">Start now</a>
+                        <a class="secondary" href="<?= $sell_product_url ?>"><?= Yii::t('container_pages', 'Start now') ?></a>
                     </div>
                 </div>
             </div>
