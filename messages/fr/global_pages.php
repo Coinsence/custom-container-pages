@@ -17,6 +17,8 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
+    'Knowledge Souk' => '',
+    'Sharing Economy Crash Course' => '',
     'Accounts' => 'Comptes',
     'Active spaces' => 'Espaces actifs',
     'Activity Stream' => 'Page d\'activités',

@@ -26,6 +26,7 @@ return [
     'Find other members within the network.' => '',
     'Find products, services and ressources.' => '',
     'Find projects, organizations and communities.' => '',
+    'Knowledge Souk' => '',
     'Marketplace' => '',
     'People' => '',
     'Profile' => '',
@@ -33,6 +34,7 @@ return [
     'Search for people, spaces or content using keywords.' => '',
     'See all your accounts, balances and transactions.' => '',
     'See what the members are posting.' => '',
+    'Sharing Economy Crash Course' => '',
     'Shortcuts' => '',
     'Spaces' => '',
 ];
