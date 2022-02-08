@@ -17,7 +17,9 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
+    'A knowledge resources and materials directory.' => '',
     'Knowledge Souk' => '',
+    'Learn the Sharing Economy basics.' => '',
     'Sharing Economy Crash Course' => '',
     'Accounts' => 'Comptes',
     'Active spaces' => 'Espaces actifs',

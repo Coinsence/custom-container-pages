@@ -17,6 +17,7 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
+    'A knowledge resources and materials directory.' => '',
     'Accounts' => '',
     'Active spaces' => '',
     'Activity Stream' => '',
@@ -27,6 +28,7 @@ return [
     'Find products, services and ressources.' => '',
     'Find projects, organizations and communities.' => '',
     'Knowledge Souk' => '',
+    'Learn the Sharing Economy basics.' => '',
     'Marketplace' => '',
     'People' => '',
     'Profile' => '',
