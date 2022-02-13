@@ -65,6 +65,7 @@
     }
     .landing .main-logo {
         margin-top: 16px;
+        margin-bottom: 16px;
     }
 
     .landing .non-logged-in {
@@ -86,6 +87,10 @@
     }
     .landing .non-logged-in .copyright {
         text-align: center;
+    }
+    .landing .non-logged-in .copyright strong {
+        display: block;
+        margin-bottom: 8px;
     }
     .landing .non-logged-in .copyright img {
         width: 180px;
@@ -169,7 +174,7 @@ $membership = $space->getMembership();
         <?php if (!$is_logged_in): ?>
             <div class="non-logged-in">
                 <h1><?= Yii::t('container_pages', 'Welcome to our community') ?></h1>
-                <img class="main-logo" src="https://beyondborders.network/images/ibb-logo.png" alt="Impact Beyond Borders Logo">
+                <img class="main-logo" src="https://welcome.beyondborders.network/wp-content/uploads/2021/12/logo-site_2.png" alt="Impact Beyond Borders Logo">
                 <a class="primary" href="/user/auth/login" data-target="#globalModal"><?= Yii::t('container_pages', 'Join us') ?></a>
                 <p><?= Yii::t(
                     'container_pages',
@@ -181,7 +186,9 @@ $membership = $space->getMembership();
                         '</a>'
                     ]) ?></p>
                 <p class="copyright">
-                    <strong><?= Yii::t('container_pages', 'Powered By:') ?> </strong><img src="https://beyondborders.network/images/cs-logo.png" alt="Coinsence Logo">
+                    <strong><?= Yii::t('container_pages', 'Powered By:') ?> </strong>
+                    <img src="https://welcome.beyondborders.network/wp-content/uploads/2021/10/2_Coinsence.png" alt="Coinsence Logo">
+                    <img src="https://welcome.beyondborders.network/wp-content/uploads/2021/10/2_GIZ.png" alt="GIZ Logo">
                 </p>
             </div>
         <?php else: ?>
