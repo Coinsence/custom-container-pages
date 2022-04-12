@@ -207,7 +207,7 @@ $membership = $space->getMembership();
                         ) ?>
                     </h1>
                     <p>
-                        <?= Yii::t('container_pages', 'Initiated by Tunisian diaspora and local change-makers with the vision to Remove borders and build an open and decentral governed collaboration network that stimulates a more inclusive and sustainable economy that is build on participation and sharing.') ?>
+                        <?= Yii::t('container_pages', 'Initiated by Tunisian diaspora and local change-makers with the vision to build an open collaboration network that supports impact projects and enables value sharing across all borders.') ?>
                     </p>
                     <?php if (!$membership || !$membership->status): ?>
                         <a class="primary" href="/space/beyond-borders/space/membership/request-membership-form" data-target="#globalModal">Join in</a>
@@ -217,23 +217,23 @@ $membership = $space->getMembership();
                     <div class="section">
                         <h2><?= Yii::t('container_pages', 'Create') ?></h2>
                         <p>
-                            <?= Yii::t('container_pages', 'Add your project to receive Tunisia Impact COIN that you can use to reward your donors and supporters.') ?>
+                            <?= Yii::t('container_pages', 'Add your project and receive funding in IBB COINs to reward your donors and supporters.') ?>
                         </p>
-                        <a class="secondary" href="<?= $add_project_url ?>"><?= Yii::t('container_pages', 'Add project') ?></a>
+                        <a class="secondary" href="<?= $add_project_url ?>"><?= Yii::t('container_pages', 'Add your project') ?></a>
                     </div>
                     <div class="section">
                         <h2><?= Yii::t('container_pages', 'Fund') ?></h2>
                         <p>
-                            <?= Yii::t('container_pages', 'Check our project and get for your financial support your reward in Tunisia Impact COIN.') ?>
+                            <?= Yii::t('container_pages', 'Support your selected projects with some funding and get rewarded trough IBB COINs.') ?>
                         </p>
-                        <a class="secondary" href="<?= $fund_project_url ?>"><?= Yii::t('container_pages', 'Fund project') ?></a>
+                        <a class="secondary" href="<?= $fund_project_url ?>"><?= Yii::t('container_pages', 'Check the projects') ?></a>
                     </div>
                     <div class="section">
                         <h2><?= Yii::t('container_pages', 'Support') ?></h2>
                         <p>
-                            <?= Yii::t('container_pages', 'Offer your expertise, products, services or discounts and receive Tunisia Impact COIN as compensation.') ?>
+                            <?= Yii::t('container_pages', 'Offer your expertise, products, services or discounts and receive IBB COINs as compensation.') ?>
                         </p>
-                        <a class="secondary" href="<?= $sell_product_url ?>"><?= Yii::t('container_pages', 'Start now') ?></a>
+                        <a class="secondary" href="<?= $sell_product_url ?>"><?= Yii::t('container_pages', 'Check the marketplace') ?></a>
                     </div>
                 </div>
             </div>
