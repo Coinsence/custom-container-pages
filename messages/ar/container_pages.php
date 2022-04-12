@@ -17,19 +17,19 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-    'Add project' => '',
-    'Add your project to receive Tunisia Impact COIN that you can use to reward your donors and supporters.' => '',
+    'Add your project' => '',
+    'Add your project and receive funding in IBB COINs to reward your donors and supporters.' => '',
     'As a collaboration and value exchange platform we are using Coinsence.org platform. By clicking the button above, you agree to Coinsence {0}Terms of services{1} and have read and acknowledge Coinsence {2}Privacy Policy{3}' => '',
-    'Check our project and get for your financial support your reward in Tunisia Impact COIN.' => '',
+    'Check the marketplace' => '',
+    'Check the projects' => '',
     'Create' => '',
     'Fund' => '',
-    'Fund project' => '',
-    'Initiated by Tunisian diaspora and local change-makers with the vision to Remove borders and build an open and decentral governed collaboration network that stimulates a more inclusive and sustainable economy that is build on participation and sharing.' => '',
+    'Initiated by Tunisian diaspora and local change-makers with the vision to build an open collaboration network that supports impact projects and enables value sharing across all borders.' => '',
     'Join us' => '',
-    'Offer your expertise, products, services or discounts and receive Tunisia Impact COIN as compensation.' => '',
+    'Offer your expertise, products, services or discounts and receive IBB COINs as compensation.' => '',
     'Powered By:' => '',
-    'Start now' => '',
     'Support' => '',
+    'Support your selected projects with some funding and get rewarded through IBB COINs.' => '',
     'Welcome to our community' => '',
     '{0} We are {1} a global network of {2} Innovators & {3} social entrepreneurs.' => '',
 ];

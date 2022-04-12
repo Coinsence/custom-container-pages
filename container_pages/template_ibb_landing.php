@@ -224,7 +224,7 @@ $membership = $space->getMembership();
                     <div class="section">
                         <h2><?= Yii::t('container_pages', 'Fund') ?></h2>
                         <p>
-                            <?= Yii::t('container_pages', 'Support your selected projects with some funding and get rewarded trough IBB COINs.') ?>
+                            <?= Yii::t('container_pages', 'Support your selected projects with some funding and get rewarded through IBB COINs.') ?>
                         </p>
                         <a class="secondary" href="<?= $fund_project_url ?>"><?= Yii::t('container_pages', 'Check the projects') ?></a>
                     </div>
