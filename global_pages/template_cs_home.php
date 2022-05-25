@@ -88,18 +88,18 @@ use humhub\modules\space\widgets\Image as SpaceImage;
 $user = Yii::$app->user->getIdentity();
 
 if (!$user) {
-    $link_profile = $link_account = $link_campaigns = $link_marketplace = $link_search = '#';
+    $link_profile = $link_account = $link_search = '#';
 } else {
     $link_profile = $user->createUrl('/user/profile/home');
     $link_account = $user->createUrl('/xcoin/overview');
-    $link_campaigns = Url::to('/xcoin/funding-overview');
-    $link_marketplace = Url::to('/marketplace');
     $link_search = Url::to('/search');
 }
 
 $link_people = Url::to('/directory/members');
 $link_spaces = Url::to('/directory/spaces');
 $link_stream = Url::to('/dashboard');
+$link_campaigns = Url::to('/xcoin/funding-overview');
+$link_marketplace = Url::to('/marketplace');
 
 $active_spaces_names = ['Impact Beyond Borders', 'Helma'];
 $active_spaces = Space::findAll(['name' => $active_spaces_names]);
@@ -157,14 +157,14 @@ $active_spaces = Space::findAll(['name' => $active_spaces_names]);
                     <p><?= Yii::t('global_pages', 'Find projects, organizations and communities.') ?></p>
                 </div>
             </a>
-            <a class="card" href="<?= $link_campaigns ?>" <?= !$user ? 'data-action-click="ui.modal.load" data-action-url="/user/auth/login"' : '' ?>>
+            <a class="card" href="<?= $link_campaigns ?>">
                 <img alt="<?= Yii::t('global_pages', 'Campaigns') ?>" src="data:image/png;base64,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">
                 <div class="text">
                     <h4><?= Yii::t('global_pages', 'Campaigns') ?></h4>
                     <p><?= Yii::t('global_pages', 'Check for current funding campaigns.') ?></p>
                 </div>
             </a>
-            <a class="card" href="<?= $link_marketplace ?>" <?= !$user ? 'data-action-click="ui.modal.load" data-action-url="/user/auth/login"' : '' ?>>
+            <a class="card" href="<?= $link_marketplace ?>">
                 <img alt="<?= Yii::t('global_pages', 'Marketplace') ?>" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAlCAYAAAAA7LqSAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQVSURBVHgB7ZhLbBtFGMf/s49kdx0ntmM7pEkaU2jTJjycFgl6wDRKFdKHkLggxA0p94YDuSHSCxLi0iKVA4XUiANwgFaiFCSImoBU8VAqAy3QRALThBTahKRp4uc+2DG15fUsaRycdkH+SSN7//529vt/s54ZDcFNzr4Y9kDGMIFxKK957u5D6+4hFPP55Ef4YuqMRXt06wFEtu23aN9+OIjrV2IWzbMpjAcOHrFopyfewbnJzyzaQO8QtgQ7CteXL57B+U9eKg6JwzCGB16dfCsvcDkTL4cHiWL8cisTi4l5xgTlwbZHsF46W3cy2vtfjiCVTRSuN3ftR+SZ1+NibV1eCoGQ6BuHtp04MRjyUIGPv917UqkVB92KJLldEmjzbupEe98rEGtFCDUCeEGAIAr4dOpdqFwaiksptK0tXdjZHgEn8JaWuDwKLvsnZLMP2kRTq3U3o2l7PwhHCs1XH8DF2QmoRiaXoa7rORMCL5qjsr1gRnYHPE2hh/HbpVHoWuamSsIGhKcP7vaNC74GJVxaEbE1DKlBYSoVbAmgxlei1bWhIdjAxO64twmat9mi8Y0tUJp9TGwk8hiuLc9YtEBdPRrb/BaNXjeu7EXqj++K5ZCuGycFlEFGSzOaq6beNtbIrmAjEAUOnMSmzWGDMFTWCCcHbWOzNgUqF2okhDvMvx9pI247IkSxr1wis8RoIl+L24ndSFPKerXskuYIvwgHQI2MlYoT1wUmuZWstjiT8DGxo9PC4YSqMbHXklq8NPZnzR+z63c26R8r1S/MJaOl2lwygznNFS/VDQNj/NBTW8Y5jqdTcChJJJwW9uFUZpcEA+jwuQodHD0/LU0t+UNJTYZAVNxQ3fjxRhemE97+b64soc0tYz6ZRezqEl6LTUsx7PDcr/9gbhZSuT6+5nfheLr3ruJ+aQHe++l36aurdUy/U8ut4XnzuZvdEhSRz+VwLDaDc+l2S7+mjTFdX36OFDsb+Pj7PQbHnc1fK+ZUJ5sL2Xwqi/XiNRbMR8qgRcrjl8xF0kyOJppQ9Vv2QfMojjNrMXxMfSFKv8sHPviVfq66jtCb1/Kg1VggXkabo4Upozh2OeQN5NmwdeR2UzXiNKpGnMb/xkhZ2/jVeOKeAPa2N+bm/LVwaWEFIxdmc4toJajIiFATtK3VBKXD68LzD4VQKSpipDtYj/Xgl0Vza1OZ3XNFjJQzEuy9PCpBddZyGlUjTqNqxGlUjTgNixEVQhz/UawjIqUWQeCIc6rV4Dgwx0oWI9GebtMEicHBmCcocXU5M16qM/8RTUs/6+RRIQY5En2ym8mPMRLd120eCBs91DkcBj3PerO/86jdb7az1vG++2K6nukxjyKj5s139FUz/n47TumE7Bl5vOvwP8X9BUolZYICDVNnAAAAAElFTkSuQmCC">
                 <div class="text">
                     <h4><?= Yii::t('global_pages', 'Marketplace') ?></h4>
