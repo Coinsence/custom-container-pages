@@ -424,6 +424,7 @@ $space_cover = $space->getProfileBannerImage()->getUrl('_org');
                     </div>
                 </div>
             </div>
+            <?php if (false): ?>
             <div class="row">
                 <div class="col-md-12">
                     <div class="panel-h">
@@ -492,6 +493,7 @@ $space_cover = $space->getProfileBannerImage()->getUrl('_org');
                     </div>
                 </div>
             </div>
+            <?php endif; ?>
         </div>
     </main>
 
