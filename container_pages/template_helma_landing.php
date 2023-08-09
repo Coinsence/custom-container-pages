@@ -382,7 +382,7 @@ $space_cover = $space->getProfileBannerImage()->getUrl('_org');
                                 ]); ?>
                                 <div class="title">
                                     <h3><?= $space_title ?></h3>
-                                    <h6>une initiative non-lucratif dediée aux jeunes</h6>
+                                    <h6>Une initiative apolitique et à but non-lucratif dédiée aux jeunes tunisiens</h6>
                                 </div>
                             </div>
                             <div class="col-md-6 right panel-links">
@@ -410,15 +410,9 @@ $space_cover = $space->getProfileBannerImage()->getUrl('_org');
                         </div>
                         <div class="panel-h-body">
                             <p>
-                                HELMA est une initiative d'aide,  d'orientation et de soutien, et lorsque cela est nécessaire d'aide financière pour les jeunes Tunisiens
-                                dans des domaines portant des valeurs communes à notre association.  Helma se reposera, sur une plateforme qui réunit à la fois les compétences
-                                tunisiennes à l'etranger ainsi que celles en Tunisie. Helma est une initiative née d'une association apolitique respectant la liberté de
-                                croyance. Le projet vise à rassembler la capacité d'agir et de mise en contact de toutes les  compétences tunisiennes à l'étranger ou en
-                                Tunisie, ainsi que la mise en œuvre des actions de parrainage et de promotion en faveur de jeunes en Tunisie, notamment ceux en situation
-                                difficile ou dont le réseau relationel ne leur donne pas accès à l'information ou aux personnes utiles afin de réaliser leur passion et/ou
-                                leur rêve.  Notons que le projet, appuyé par  plusieurs  partenaires, tend également à aider les jeunes tunisiens dans leurs parcours
-                                scolaires, universitaires ainsi qu'en termes d'employabilité, loin des tiraillements politiques. Le rêve Tunisien est possible , il suffit
-                                de le vouloir dans un univers d'entraide et de solidarité.
+                                Helma donne la possibilité à la diaspora d'aider les jeunes tunisiens à réaliser leurs rêves à travers : le mentorat, la formation et / ou les dons.
+                                <br />
+                                Helma est un projet apolitique dont les membres travaillent bénévolement et ne repose sur aucun financement.
                             </p>
                         </div>
                     </div>
